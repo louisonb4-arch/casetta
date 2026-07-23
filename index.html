@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Casetta — Pizzeria corse au feu de bois · Carquefou</title>
+  <meta name="description" content="A Casetta, pizzeria corse au feu de bois à Carquefou. Pizzas généreuses, charcuterie corse, burgers maison et plats à l'ardoise. 8 rue Antarès, 44470 Carquefou — 02 40 30 81 56.">
+  <meta property="og:title" content="A Casetta — Pizzeria corse au feu de bois · Carquefou">
+  <meta property="og:description" content="La petite maison du feu. Pizzas au feu de bois, charcuterie corse, esprit maquis. 8 rue Antarès, Carquefou.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "A Casetta",
+    "servesCuisine": ["Pizzeria", "Corse"],
+    "telephone": "+33240308156",
+    "email": "matt.acasetta@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8 rue Antarès",
+      "postalCode": "44470",
+      "addressLocality": "Carquefou",
+      "addressCountry": "FR"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- animation d'ouverture — l'enseigne s'allume, la porte du four se lève -->
+<div class="intro-veil" id="introVeil" aria-hidden="true">
+  <div class="intro-inner">
+    <p class="intro-benvenuti corse">Benvenuti</p>
+    <p class="intro-name"><span class="mask"><span class="word">A&nbsp;Ca<span class="tt">s</span>etta</span></span></p>
+    <span class="intro-braise"></span>
+    <p class="intro-tag">pizzeria corse au feu de bois — Carquefou</p>
+  </div>
+</div>
+
+<header class="topbar" id="topbar">
+  <a href="#" class="topbar-brand" aria-label="A Casetta — retour en haut">A&nbsp;Casetta</a>
+  <nav class="topbar-nav" aria-label="Navigation principale">
+    <a href="#focu">Le feu</a>
+    <a href="#tavula">La carte</a>
+    <a href="#casa">La maison</a>
+    <a href="#infos">Venir</a>
+  </nav>
+  <a href="tel:+33240308156" class="topbar-tel">02 40 30 81 56</a>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobmenu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="mobmenu" id="mobmenu" aria-hidden="true">
+  <nav aria-label="Navigation mobile">
+    <a href="#focu">Le feu</a>
+    <a href="#tavula">La carte</a>
+    <a href="#casa">La maison</a>
+    <a href="#infos">Venir</a>
+  </nav>
+  <a href="tel:+33240308156" class="mobmenu-tel">02 40 30 81 56</a>
+  <p class="mobmenu-foot">8 rue Antarès · Carquefou</p>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <p class="hero-kicker reveal"><span class="corse">Benvenuti</span> — pizzeria corse au feu de bois</p>
+    <h1 class="hero-title">
+      <span class="line reveal">A&nbsp;Ca<span class="tt">s</span>etta</span>
+    </h1>
+    <p class="hero-sub reveal">« La petite maison ». Des pizzas qui sortent du feu,
+      de la charcuterie corse posée dessus, et une salle où l'on reste plus longtemps que prévu.
+      À Carquefou, zone de la Fleuriaye.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-dark" href="#tavula">Voir la carte</a>
+      <a class="btn btn-line" href="tel:+33240308156">Appeler · 02 40 30 81 56</a>
+    </div>
+    <div class="hero-photos">
+      <figure class="plaque plaque-a reveal-clip">
+        <div class="clip"><img src="images/pizza-bresaola.jpg" alt="Pizza au feu de bois, bresaola et roquette, servie sur table en bois" width="413" height="310"></div>
+        <figcaption>Sortie du four — croûte léopard</figcaption>
+      </figure>
+      <figure class="plaque plaque-b reveal-clip">
+        <div class="clip"><img src="images/salle-jute.jpg" alt="Banquettes en toile de jute et suspension en osier dans la salle" width="239" height="322"></div>
+        <figcaption>La salle, côté banquettes</figcaption>
+      </figure>
+    </div>
+    <p class="hero-marq" aria-hidden="true"><span>feu de bois · charcuterie corse · pâte maison · feu de bois · charcuterie corse · pâte maison · </span><span>feu de bois · charcuterie corse · pâte maison · feu de bois · charcuterie corse · pâte maison · </span></p>
+  </section>
+
+  <!-- ============ INTRO ============ -->
+  <section class="intro">
+    <div class="intro-grid">
+      <p class="intro-word corse reveal" aria-hidden="true">a casa</p>
+      <div class="intro-body">
+        <h2 class="reveal">Une casetta, c'est une petite maison.<br>Celle-ci sent le feu de bois.</h2>
+        <p class="reveal">Murs de brique peinte à la chaux, plafond noir, tables en bois brut,
+          banquettes en toile de jute et plantes qui grimpent : A Casetta n'a rien d'un décor.
+          On y mange des pizzas généreuses passées au feu, des burgers au pain noir
+          et des assiettes à l'ardoise — avec l'accent corse dans l'assiette.</p>
+        <p class="intro-sign reveal"><span class="corse">Matt &amp; l'équipe</span></p>
+      </div>
+      <figure class="intro-photo reveal-clip">
+        <div class="clip"><img src="images/salle.jpg" alt="Salle du restaurant en enfilade, tables dressées et banquettes" width="239" height="320" loading="lazy"></div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ U FOCU ============ -->
+  <section class="focu" id="focu">
+    <div class="focu-head">
+      <p class="sec-tag reveal"><span class="corse">u focu</span> — le feu</p>
+      <h2 class="reveal">La croûte parle<br>avant la carte.</h2>
+      <p class="focu-lede reveal">Regardez les bords : gonflés, tachetés, marqués par la flamme.
+        C'est la signature d'une cuisson vive, jamais la même d'une pizza à l'autre.
+        Coppa, champignons, roquette ou anchois — tout passe par le feu.</p>
+    </div>
+    <div class="focu-grid">
+      <figure class="focu-cell f1 reveal-clip">
+        <div class="clip"><img src="images/pizza-anchois.jpg" alt="Pizza aux anchois, câpres et olives noires" width="414" height="310" loading="lazy"></div>
+        <figcaption>Anchois, câpres, olives</figcaption>
+      </figure>
+      <figure class="focu-cell f2 reveal-clip">
+        <div class="clip"><img src="images/pizza-funghi.jpg" alt="Pizza aux champignons et persillade" width="202" height="332" loading="lazy"></div>
+        <figcaption>Champignons, persillade</figcaption>
+      </figure>
+      <figure class="focu-cell f3 reveal-clip">
+        <div class="clip"><img src="images/pizza-poulet.jpg" alt="Pizza au poulet, chorizo et œuf" width="475" height="305" loading="lazy"></div>
+        <figcaption>Poulet, chorizo, œuf</figcaption>
+      </figure>
+      <figure class="focu-cell f4 reveal-clip">
+        <div class="clip"><img src="images/pizza-chevre.jpg" alt="Pizza au chèvre et gorgonzola" width="253" height="337" loading="lazy"></div>
+        <figcaption>Chèvre, gorgonzola</figcaption>
+      </figure>
+      <div class="focu-cell ftxt reveal">
+        <p class="focu-big corse">manghjà<br>bè</p>
+        <p class="focu-small">— bien manger. Le seul mot d'ordre de la maison.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ A TAVULA / CARTE ============ -->
+  <section class="tavula" id="tavula">
+    <div class="tavula-head">
+      <p class="sec-tag reveal"><span class="corse">a tavula</span> — à table</p>
+      <h2 class="reveal">Ce qui passe<br>sur les planches.</h2>
+      <p class="tavula-note reveal">Aperçu de ce que l'on voit passer en salle.
+        Carte complète, tarifs et suggestions du moment&nbsp;: <strong>[À CONFIRMER]</strong> —
+        renseignez-vous au <a href="tel:+33240308156">02&nbsp;40&nbsp;30&nbsp;81&nbsp;56</a>.</p>
+    </div>
+
+    <div class="carte">
+      <article class="carte-fam reveal">
+        <header class="carte-fam-head">
+          <h3>Pizze <span class="carte-num">n°1</span></h3>
+          <p>Au feu de bois, pâte maison</p>
+        </header>
+        <ul>
+          <li><span class="dish">Charcuterie corse</span><span class="dot" aria-hidden="true"></span><span class="desc">coppa, champignons, olives</span></li>
+          <li><span class="dish">Bresaola &amp; roquette</span><span class="dot" aria-hidden="true"></span><span class="desc">copeaux, huile d'olive</span></li>
+          <li><span class="dish">Anchois</span><span class="dot" aria-hidden="true"></span><span class="desc">câpres, olives noires</span></li>
+          <li><span class="dish">Verdure</span><span class="dot" aria-hidden="true"></span><span class="desc">légumes grillés, champignons</span></li>
+          <li class="tbc"><span class="dish">Noms &amp; prix exacts</span><span class="dot" aria-hidden="true"></span><span class="desc">[À CONFIRMER]</span></li>
+        </ul>
+        <figure class="carte-ph ph-r reveal-clip">
+          <div class="clip"><img src="images/pizza-jambon-roquette.jpg" alt="Pizza jambon et roquette servie sur assiette noire" width="233" height="310" loading="lazy"></div>
+        </figure>
+      </article>
+
+      <article class="carte-fam reveal">
+        <header class="carte-fam-head">
+          <h3>Burgers <span class="carte-num">n°2</span></h3>
+          <p>Pain noir maison, frites servies en passoire</p>
+        </header>
+        <ul>
+          <li><span class="dish">Burger au bun noir</span><span class="dot" aria-hidden="true"></span><span class="desc">graines de quinoa, frites maison</span></li>
+          <li><span class="dish">Burger classique</span><span class="dot" aria-hidden="true"></span><span class="desc">steak, salade, tomate</span></li>
+          <li class="tbc"><span class="dish">Déclinaisons &amp; prix</span><span class="dot" aria-hidden="true"></span><span class="desc">[À CONFIRMER]</span></li>
+        </ul>
+        <figure class="carte-ph ph-l reveal-clip">
+          <div class="clip"><img src="images/burger-noir.jpg" alt="Burger au pain noir et frites maison en passoire métallique" width="270" height="361" loading="lazy"></div>
+        </figure>
+      </article>
+
+      <article class="carte-fam reveal">
+        <header class="carte-fam-head">
+          <h3>À l'ardoise <span class="carte-num">n°3</span></h3>
+          <p>Assiettes servies sur ardoise noire</p>
+        </header>
+        <ul>
+          <li><span class="dish">Saint-Jacques</span><span class="dot" aria-hidden="true"></span><span class="desc">risotto crémeux</span></li>
+          <li><span class="dish">Saumon rôti</span><span class="dot" aria-hidden="true"></span><span class="desc">légumes confits</span></li>
+          <li><span class="dish">Linguine aux gambas</span><span class="dot" aria-hidden="true"></span><span class="desc">roquette, parmesan</span></li>
+          <li class="tbc"><span class="dish">Suggestions du moment</span><span class="dot" aria-hidden="true"></span><span class="desc">[À CONFIRMER]</span></li>
+        </ul>
+        <figure class="carte-ph ph-r reveal-clip">
+          <div class="clip"><img src="images/saint-jacques.jpg" alt="Noix de Saint-Jacques sur risotto crémeux" width="376" height="281" loading="lazy"></div>
+        </figure>
+      </article>
+
+      <article class="carte-fam reveal">
+        <header class="carte-fam-head">
+          <h3>Dolci <span class="carte-num">n°4</span></h3>
+          <p>Pour finir en douceur</p>
+        </header>
+        <ul>
+          <li><span class="dish">Crème brûlée</span><span class="dot" aria-hidden="true"></span><span class="desc">sorbet fruits rouges</span></li>
+          <li><span class="dish">Fondant chocolat</span><span class="dot" aria-hidden="true"></span><span class="desc">cœur coulant</span></li>
+          <li class="tbc"><span class="dish">Carte des desserts</span><span class="dot" aria-hidden="true"></span><span class="desc">[À CONFIRMER]</span></li>
+        </ul>
+        <figure class="carte-ph ph-l reveal-clip">
+          <div class="clip"><img src="images/creme-brulee.jpg" alt="Crème brûlée caramélisée et sorbet fruits rouges sur ardoise" width="375" height="281" loading="lazy"></div>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ A CASA / AMBIANCE ============ -->
+  <section class="casa" id="casa">
+    <div class="casa-head">
+      <p class="sec-tag reveal"><span class="corse">in casa</span> — chez nous</p>
+      <h2 class="reveal">Brique chaulée, jute,<br>osier et plafond noir.</h2>
+    </div>
+    <div class="casa-flow">
+      <figure class="casa-ph c1 reveal-clip">
+        <div class="clip"><img src="images/salle-jute.jpg" alt="Coin banquettes en jute, coussins et plantes suspendues" width="239" height="322" loading="lazy"></div>
+        <figcaption>Les banquettes en toile de jute</figcaption>
+      </figure>
+      <figure class="casa-ph c2 reveal-clip">
+        <div class="clip"><img src="images/planches.jpg" alt="Mur de planches à découper en bois gravées" width="322" height="320" loading="lazy"></div>
+        <figcaption>« Pizza is love with crust » — le mur des planches</figcaption>
+      </figure>
+      <figure class="casa-ph c3 reveal-clip">
+        <div class="clip"><img src="images/soiree.jpg" alt="Table le soir, pizza, vin rouge et bougie" width="239" height="321" loading="lazy"></div>
+        <figcaption>Le soir, à la bougie</figcaption>
+      </figure>
+      <figure class="casa-ph c4 reveal-clip">
+        <div class="clip"><img src="images/tablee.jpg" alt="Grande tablée avec plusieurs pizzas et plats partagés" width="224" height="298" loading="lazy"></div>
+        <figcaption>Les grandes tablées</figcaption>
+      </figure>
+      <p class="casa-pull reveal">On pousse la porte pour une pizza,<br>on reste pour la maison.</p>
+    </div>
+  </section>
+
+  <!-- ============ U VUCABULARIU (signature) ============ -->
+  <section class="vucab" id="vucab">
+    <p class="sec-tag light reveal"><span class="corse">u vucabulariu</span> — les mots de la maison</p>
+    <h2 class="reveal">Petit lexique corse,<br>à l'usage des Carquefoliens.</h2>
+    <dl class="vucab-list">
+      <div class="vucab-item reveal">
+        <dt><span class="corse">A casetta</span><em>· la petite maison</em></dt>
+        <dd>Le nom du lieu. Une maison réduite à l'essentiel : un feu, une table, du monde autour.</dd>
+      </div>
+      <div class="vucab-item reveal">
+        <dt><span class="corse">U focu</span><em>· le feu</em></dt>
+        <dd>Ce qui tache les croûtes de léopard et parfume la salle. Ici, on ne cuit pas — on flambe.</dd>
+      </div>
+      <div class="vucab-item reveal">
+        <dt><span class="corse">A coppa</span><em>· la coppa</em></dt>
+        <dd>Charcuterie corse d'échine, posée sur la pizza à la sortie du four, jamais avant.</dd>
+      </div>
+      <div class="vucab-item reveal">
+        <dt><span class="corse">A tavula</span><em>· la table</em></dt>
+        <dd>En bois brut, forcément. C'est là que les pizzas atterrissent et que les soirées s'allongent.</dd>
+      </div>
+      <div class="vucab-item reveal">
+        <dt><span class="corse">A prestu</span><em>· à bientôt</em></dt>
+        <dd>Ce qu'on se dit en partant. Rarement tenu au-delà d'une semaine.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ============ INFOS ============ -->
+  <section class="infos" id="infos">
+    <div class="infos-grid">
+      <div class="infos-col">
+        <p class="sec-tag reveal"><span class="corse">venite</span> — venir</p>
+        <h2 class="reveal">8 rue Antarès,<br>Carquefou.</h2>
+        <p class="infos-p reveal">Zone de la Fleuriaye, à dix minutes du centre de Carquefou
+          et vingt de Nantes. Parking sur place.</p>
+        <ul class="infos-list reveal">
+          <li><span class="infos-k">Adresse</span><span>8 rue Antarès, 44470 Carquefou</span></li>
+          <li><span class="infos-k">Téléphone</span><a href="tel:+33240308156">02 40 30 81 56</a></li>
+          <li><span class="infos-k">E-mail</span><a href="mailto:matt.acasetta@gmail.com">matt.acasetta@gmail.com</a></li>
+          <li><span class="infos-k">Horaires</span><span>[À CONFIRMER]</span></li>
+          <li><span class="infos-k">Réservation</span><span>par téléphone — [À CONFIRMER]</span></li>
+        </ul>
+        <div class="infos-cta reveal">
+          <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=A+Casetta+8+rue+Antar%C3%A8s+44470+Carquefou" target="_blank" rel="noopener">Itinéraire</a>
+          <a class="btn btn-line" href="tel:+33240308156">Réserver par téléphone</a>
+        </div>
+      </div>
+      <figure class="infos-photo reveal-clip">
+        <div class="clip"><img src="images/pizza-assiette-noire.jpg" alt="Pizza jambon et roquette sur assiette noire, table en bois" width="397" height="298" loading="lazy"></div>
+        <figcaption>La preuve par l'assiette</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <p class="footer-hello corse">A prestu&nbsp;!</p>
+  <p class="footer-name" aria-hidden="true">A&nbsp;Casetta</p>
+  <div class="footer-row">
+    <p>8 rue Antarès · 44470 Carquefou</p>
+    <a href="tel:+33240308156">02 40 30 81 56</a>
+    <a href="mailto:matt.acasetta@gmail.com">matt.acasetta@gmail.com</a>
+  </div>
+  <p class="footer-legal">© A Casetta — pizzeria corse au feu de bois, Carquefou.<br>
+  Photos du restaurant. Horaires et prix&nbsp;: [à confirmer].<br>
+  <a href="mentions-legales.html">Mentions légales</a> · Création <a href="https://vokumagency.com" target="_blank" rel="noopener">Vokum</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
