@@ -58,12 +58,10 @@ function startReveals() {
 }
 
 // ---------- animation d'ouverture ----------
-// jouée une fois par session ; l'enseigne s'allume, puis le voile se lève
+// jouée à chaque chargement ; l'enseigne s'allume, puis le voile se lève
 const veil = document.getElementById('introVeil');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-let introVue = false;
-try { introVue = !!sessionStorage.getItem('casetta-intro'); } catch (e) { /* stockage indispo */ }
-const skipIntro = !veil || reduceMotion || introVue ||
+const skipIntro = !veil || reduceMotion ||
   new URLSearchParams(location.search).has('qa');
 
 function endIntro() {
@@ -78,7 +76,6 @@ if (skipIntro) {
   document.body.classList.remove('intro-cascade');
   endIntro();
 } else {
-  try { sessionStorage.setItem('casetta-intro', '1'); } catch (e) { /* stockage indispo */ }
   document.body.classList.add('intro-lock', 'intro-cascade');
   veil.classList.add('play');
   setTimeout(() => {
